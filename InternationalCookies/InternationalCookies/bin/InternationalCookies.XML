@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InternationalCookies</name>
+    </assembly>
+    <members>
+        <member name="M:InternationalCookies.Controllers.Api.CustomerApiController.Get">
+            <summary>
+            Get all customer list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.CustomerApiController.Get(System.Nullable{System.Int32},System.Nullable{System.Int64})">
+            <summary>
+            Get customer by id or phone
+            </summary>
+            <param name="id"></param>
+            <param name="phone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.CustomerApiController.Post(System.String,System.String,System.String)">
+            <summary>
+            Add new customer 
+            </summary>
+            <param name="name"></param>
+            <param name="phone"></param>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.CustomerApiController.Put(System.Int32,System.String)">
+            <summary>
+            Update customer
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.CustomerApiController.Delete(System.Int32)">
+            <summary>
+            Delete customer
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.ProductsApiController.Get">
+            <summary>
+            Get All Products with stocks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.ProductsApiController.Get(System.Int32)">
+            <summary>
+            Get product by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.ProductsApiController.Post(System.String,System.Decimal,System.Int32,System.Nullable{System.Int32})">
+            <summary>
+            Add products
+            </summary>
+            <param name="productName"></param>
+            <param name="price"></param>
+            <param name="numberOfProductStocksAvailable"></param>
+            <param name="numberOfProductStocksDamage"></param>
+            <returns>isSuccess</returns>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.ProductsApiController.Put(System.Int32,System.String,System.Nullable{System.Decimal},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Update product and stock details by Id
+            </summary>
+            <param name="id"></param>
+            <param name="productName"></param>
+            <param name="price"></param>
+            <param name="numberOfProductStocksAvailable"></param>
+            <param name="numberOfProductStocksDamage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InternationalCookies.Controllers.Api.ProductsApiController.Delete(System.Int32)">
+            <summary>
+            Delete Product
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:InternationalCookies.Controllers.OrderApiController.PlaceOrder(ApplicationServices.Dto.OrderDto)">
+            <summary>
+            Place order
+            </summary>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

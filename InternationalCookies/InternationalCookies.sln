@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternationalCookies", "InternationalCookies\InternationalCookies.csproj", "{D54FB68F-282D-403D-8C05-5D40EB67F3C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices", "ApplicationServices\ApplicationServices.csproj", "{31C12C45-9755-4A44-8E98-804BDA0A8956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternationalCookies.Domain", "InternationalCookies.Domain\InternationalCookies.Domain.csproj", "{2B81F973-FBCA-41B8-954E-A7B3ECF66089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternationalCookies.IntegrationTests", "InternationalCookies.Domain.Tests\InternationalCookies.IntegrationTests.csproj", "{3D652F50-458E-4C6E-BD9F-E9B2FDF37A9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternationalCookies.DataAccess", "InternationalCookies.DataAccess\InternationalCookies.DataAccess.csproj", "{3BCDE76A-AD8B-4902-A66B-79FCCA00AE21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesBootstrapper", "CookiesBootstrapper\CookiesBootstrapper.csproj", "{12CDA8E1-1592-43DE-A3C6-4377F3F67ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServicesTests", "ApplicationServicesTests\ApplicationServicesTests.csproj", "{5538E143-E7C9-469A-8950-7B94C93EE382}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D54FB68F-282D-403D-8C05-5D40EB67F3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54FB68F-282D-403D-8C05-5D40EB67F3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54FB68F-282D-403D-8C05-5D40EB67F3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54FB68F-282D-403D-8C05-5D40EB67F3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C12C45-9755-4A44-8E98-804BDA0A8956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C12C45-9755-4A44-8E98-804BDA0A8956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C12C45-9755-4A44-8E98-804BDA0A8956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C12C45-9755-4A44-8E98-804BDA0A8956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B81F973-FBCA-41B8-954E-A7B3ECF66089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B81F973-FBCA-41B8-954E-A7B3ECF66089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B81F973-FBCA-41B8-954E-A7B3ECF66089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B81F973-FBCA-41B8-954E-A7B3ECF66089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D652F50-458E-4C6E-BD9F-E9B2FDF37A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D652F50-458E-4C6E-BD9F-E9B2FDF37A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D652F50-458E-4C6E-BD9F-E9B2FDF37A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D652F50-458E-4C6E-BD9F-E9B2FDF37A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BCDE76A-AD8B-4902-A66B-79FCCA00AE21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BCDE76A-AD8B-4902-A66B-79FCCA00AE21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BCDE76A-AD8B-4902-A66B-79FCCA00AE21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BCDE76A-AD8B-4902-A66B-79FCCA00AE21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12CDA8E1-1592-43DE-A3C6-4377F3F67ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12CDA8E1-1592-43DE-A3C6-4377F3F67ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12CDA8E1-1592-43DE-A3C6-4377F3F67ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12CDA8E1-1592-43DE-A3C6-4377F3F67ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5538E143-E7C9-469A-8950-7B94C93EE382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5538E143-E7C9-469A-8950-7B94C93EE382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5538E143-E7C9-469A-8950-7B94C93EE382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5538E143-E7C9-469A-8950-7B94C93EE382}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
