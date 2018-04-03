@@ -6,7 +6,7 @@ namespace InternationalCookies.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = Welcome to International Cookies";
 
             return View();
         }
