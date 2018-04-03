@@ -35,17 +35,22 @@ namespace InternationalCookies.DataAccess.Repositories
 
         public bool UpdateStock(IEnumerable<Stock> stocks)
         {
-            stocks.ForEach(st =>
-            {
-                var dbStock = _cookiesDbContext.Stocks.First(dbS => dbS.ProductId.Equals(st.ProductId));
+            var enumerable = stocks as IList<Stock> ?? stocks.ToList();
 
-                dbStock.NumberOfDefectiveItems = st.NumberOfDefectiveItems;
-                dbStock.NumberOfItemsAvailable = st.NumberOfItemsAvailable;
-            });
+            _cookiesDbContext.Stocks
+                .Where(stt => enumerable.Select(st=>st.ProductId)
+                .Contains(stt.ProductId))
+                .ForEach(st =>
+                {
+                    st.NumberOfDefectiveItems =
+                        enumerable.First(s => s.ProductId.Equals(st.ProductId)).NumberOfDefectiveItems;
+
+                    st.NumberOfItemsAvailable =
+                       enumerable.First(s => s.ProductId.Equals(st.ProductId)).NumberOfItemsAvailable;
+                });
 
             return _cookiesDbContext.SaveChanges() > 0;
-        }
-
+           }
 
         #region IDisposable Support
         private bool _disposedValue; // To detect redundant calls

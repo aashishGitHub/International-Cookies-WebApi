@@ -25,8 +25,8 @@ namespace InternationalCookies.Domain.Service
             var relatedStocksInDb = _stockRepository.GetStocksForOrder(order.OrderDetails.ToList());
 
             isSuccess = CheckIfStocksAvailable(relatedStocksInDb, productIdAndQuantityForOrderPlaced)
-                        && _orderRepository.PlaceOrder(order);
-                       // && UpdateUsedStocks(relatedStocksInDb, productIdAndQuantityForOrderPlaced);
+                        && _orderRepository.PlaceOrder(order)
+                        && UpdateUsedStocks(relatedStocksInDb, productIdAndQuantityForOrderPlaced);
 
             return isSuccess;
 
